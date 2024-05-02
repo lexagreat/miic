@@ -21,7 +21,19 @@
    letter-spacing: -0.03em;
    color: $black;
 }
+.h2 {
+   font-size: 36px;
+   font-weight: 600;
+   line-height: calc(32 / 26);
+   letter-spacing: -0.03em;
+   color: $black;
+}
+
 .btn {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    border-radius: 16px;
    background-color: $white;
    font-family: $golosFont;
@@ -48,15 +60,23 @@
    &.yellow {
       background-color: $yellow;
       border: 1px solid $yellow;
-      @media (hover: hover) {
-         &:hover {
-            background-color: $white;
-            border: 1px solid $black;
-         }
-      }
-      &:active {
-         background-color: $white;
-         border: 1px solid $black;
-      }
+      // @media (hover: hover) {
+      //    &:hover {
+      //       background-color: #fdbe67ad;
+      //       border: 1px solid #fdbe67ad;
+      //    }
+      // }
+      // &:active {
+      //    background-color: #fdbe67;
+      //    border: 1px solid #fdbe67ad;
+      // }
+   }
+}
+.section {
+   margin-top: 110px;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
    }
 }

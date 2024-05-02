@@ -1,0 +1,13 @@
+.home-navigation {
+   margin-top: 24px;
+   &__list {
+      justify-content: end;
+      display: flex;
+      gap: 6px;
+   }
+
+   &__link {
+      height: 38px;
+      font-size: 14px;
+   }
+}
