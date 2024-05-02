@@ -1,0 +1,50 @@
+.home-hero {
+   &__wrapper {
+      color: $black;
+      border-radius: 24px;
+      padding: 34px;
+      background: url(@/assets/img/home/hero.png) right / auto no-repeat;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+   }
+
+   &__upper {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      max-width: 870px;
+   }
+
+   &__title {
+   }
+
+   &__subtitle {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: calc(31 / 24);
+      letter-spacing: -0.02em;
+   }
+
+   &__down {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      max-width: 740px;
+   }
+
+   &__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: calc(21 / 14);
+      letter-spacing: -0.03em;
+   }
+
+   &__btns {
+      display: flex;
+      gap: 20px;
+   }
+
+   &__btn {
+   }
+}

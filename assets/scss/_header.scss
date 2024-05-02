@@ -1,0 +1,40 @@
+.header {
+   box-shadow: 0px 4px 14px 0px #8c8c8c14;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   &__wrapper {
+      height: 108px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__logo {
+   }
+   &__list {
+      display: flex;
+      gap: 12px;
+   }
+   &__link {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17.6px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: $black;
+      transition: 0.3s;
+      @media (hover: hover) {
+         &:hover {
+            opacity: 0.7;
+         }
+      }
+      &:active {
+         opacity: 0.7;
+      }
+   }
+}

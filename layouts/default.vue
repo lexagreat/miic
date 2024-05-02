@@ -1,12 +1,8 @@
 <template lang="">
-   <div class="container">
-      <div class="default-layout">
-         <app-header />
+   <appHeader />
 
-         <slot />
-         <app-footer />
-      </div>
-   </div>
+   <slot />
+   <appFooter />
 </template>
 <script setup></script>
 
