@@ -1,0 +1,115 @@
+.home-team {
+   &__wrapper {
+   }
+
+   &__title {
+      padding-left: calc((100vw - 1344px) / 2);
+      padding-right: calc((100vw - 1344px) / 2);
+   }
+
+   &__main {
+      .swiper {
+         padding-left: calc((100vw - 1344px) / 2);
+         padding-right: calc((100vw - 1344px) / 2);
+      }
+   }
+   @media (max-width: 1440px) {
+      &__title {
+         padding-left: 12px;
+         padding-right: 12px;
+      }
+      &__main {
+         .swiper {
+            padding-left: 12px;
+            padding-right: 12px;
+         }
+      }
+   }
+   @media (max-width: 992px) {
+      &__title {
+         padding-left: 10px;
+         padding-right: 10px;
+      }
+      &__main {
+         .swiper {
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+      }
+   }
+}
+.team-member {
+   max-width: 321px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   &__wrapper {
+      position: relative;
+   }
+   &__image {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__roles {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      bottom: 0;
+      left: 70px;
+      li {
+         padding-left: 24px;
+         padding-right: 24px;
+         transform: rotate(8deg);
+         backdrop-filter: blur(6px);
+         background: rgba(0, 0, 0, 0.06);
+         height: 39px;
+         border-radius: 16px;
+         border: 2px solid $yellow;
+         color: $white;
+         font-size: 24px;
+         font-weight: 500;
+         line-height: calc(31 / 24);
+         letter-spacing: -0.02em;
+         text-align: center;
+      }
+      li + li {
+         margin-top: -5px;
+      }
+   }
+
+   &__name {
+      font-family: $golosFont;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: calc(31 / 26);
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: $black;
+   }
+   @media (max-width: 992px) {
+      max-width: 160px;
+      &__name {
+         font-size: 13px;
+      }
+      &__roles {
+         left: 30px;
+         li {
+            font-size: 12px;
+            height: 20px;
+            padding-left: 12px;
+            padding-right: 12px;
+         }
+         li + li {
+            margin-top: -2px;
+         }
+      }
+   }
+}

@@ -4,6 +4,7 @@
       <home-hero-section />
       <nav-section />
       <home-experience-section />
+      <team-section />
       <cases-section />
       <sale-banner />
       <faq-section />
@@ -17,5 +18,6 @@ import homeExperienceSection from "@/components/sections/homeExperienceSection.v
 import casesSection from "~/components/sections/cases-section.vue";
 import saleBanner from "~/components/sections/sale-banner.vue";
 import faqSection from "~/components/sections/faq-section.vue";
+import teamSection from "~/components/sections/team-section.vue";
 </script>
 <style lang=""></style>
