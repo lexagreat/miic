@@ -1,5 +1,5 @@
 <template lang="">
-   <div class="case-card">
+   <nuxt-link to="/" class="case-card">
       <div class="case-card__image">
          <img src="@/assets/img/home/hero.png" alt="" />
       </div>
@@ -12,7 +12,7 @@
          </div>
       </div>
       <div class="case-card__date">28 мая 2023</div>
-   </div>
+   </nuxt-link>
 </template>
 <script></script>
 <style lang=""></style>

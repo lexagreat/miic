@@ -24,5 +24,16 @@
       line-height: calc(31 / 26);
       letter-spacing: -0.02em;
       color: $white;
+      text-align: center;
+   }
+   @media (max-width: 992px) {
+      &__list {
+         grid-template-columns: 1fr;
+         gap: 16px;
+      }
+      &__item {
+         border-radius: 20px;
+         font-size: 18px;
+      }
    }
 }

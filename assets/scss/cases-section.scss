@@ -14,6 +14,7 @@
 
    &__filters {
       display: flex;
+      flex-wrap: wrap;
       gap: 6px;
       label {
          height: 41px;
@@ -30,7 +31,7 @@
    &__list {
       margin-top: 24px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       gap: 20px;
    }
    &__footer {
@@ -40,6 +41,21 @@
    &__pagination {
       width: fit-content;
       justify-self: flex-end;
+   }
+   @media (max-width: 992px) {
+      &__footer {
+         justify-content: center;
+      }
+      &__filters {
+         label {
+            font-size: 16px;
+         }
+      }
+   }
+   @media (max-width: 568px) {
+      &__list {
+         grid-template-columns: 1fr;
+      }
    }
 }
 .case-card {
@@ -88,5 +104,13 @@
       line-height: calc(19 / 16);
       letter-spacing: -0.03em;
       opacity: 0.3;
+   }
+   @media (max-width: 992px) {
+      padding-right: 24px;
+      padding-bottom: 12px;
+      &__main {
+         margin-top: 30px;
+         margin-bottom: 30px;
+      }
    }
 }

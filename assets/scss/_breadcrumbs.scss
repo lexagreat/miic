@@ -32,4 +32,9 @@
          content: "/";
       }
    }
+   @media (max-width: 992px) {
+      &__link {
+         font-size: 12px;
+      }
+   }
 }
