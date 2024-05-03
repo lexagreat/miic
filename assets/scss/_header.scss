@@ -29,6 +29,29 @@
    &__list {
       display: flex;
       gap: 12px;
+      li {
+         position: relative;
+         @media (hover: hover) {
+            &:hover {
+               .header__spoiler {
+                  opacity: 1;
+                  pointer-events: all;
+               }
+               svg {
+                  transform: rotate(180deg);
+               }
+            }
+         }
+         &.active {
+            .header__spoiler {
+               opacity: 1;
+               pointer-events: all;
+            }
+            svg {
+               transform: rotate(180deg);
+            }
+         }
+      }
    }
    &__link {
       padding-left: 10px;
@@ -60,13 +83,8 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      @media (hover: hover) {
-         &:hover {
-            .header__spoiler {
-               opacity: 1;
-               pointer-events: all;
-            }
-         }
+      svg {
+         transition: 0.3s;
       }
    }
    &__spoiler {
@@ -105,16 +123,92 @@
          }
       }
    }
+   &__burger {
+      display: none;
+   }
    @media (max-width: 992px) {
+      &__burger {
+         display: block;
+         width: 24px;
+         height: 24px;
+         position: relative;
+
+         span,
+         &::before,
+         &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 11px;
+            height: 1px;
+            background-color: #0f2c34;
+            left: 50%;
+            transition: 0.3s;
+            transform-origin: center;
+         }
+         span {
+            top: 50%;
+            transform: translate(-50%, -50%);
+         }
+         &::before {
+            transform: translateX(-50%);
+            top: 8px;
+         }
+         &::after {
+            bottom: 8px;
+            transform: translateX(-50%);
+         }
+         &.active {
+            span {
+               transform: translate(-50%, -50%) scaleX(0);
+            }
+            &::after {
+               transform: translate(-45%, -4px) rotate(45deg);
+            }
+            &::before {
+               transform: translate(-45%, 3px) rotate(-45deg);
+            }
+         }
+      }
       &__wrapper {
          height: 64px;
       }
-      &__list {
-         display: none;
+      &__menu {
+         opacity: 0;
+         pointer-events: none;
+         position: fixed;
+         top: 64px;
+         left: 0;
+         right: 0;
+         background-color: white;
+         z-index: 2;
+         bottom: 0;
+         transition: 0.3s;
+         &.active {
+            opacity: 1;
+            pointer-events: all;
+         }
       }
       &__order {
-         background-color: #353535 !important;
-         color: $white;
+         display: none;
+      }
+      &__list {
+         flex-direction: column;
+         gap: 44px;
+         padding-left: 62px;
+         padding-top: 24px;
+      }
+      &__spoiler {
+         position: relative;
+         opacity: 1;
+         top: unset;
+         left: unset;
+         width: unset;
+         padding: 0;
+         ul {
+            padding-left: 10px;
+            padding-top: 24px;
+         }
       }
       &__logo {
          a {
