@@ -109,7 +109,6 @@
 <script setup>
 import { slideToggle } from "#imports";
 import { ref, onMounted, onUnmounted } from "vue";
-
 let isSubmenuOpen = ref(false);
 let isMenuOpen = ref(false);
 let spoiler = ref(null);

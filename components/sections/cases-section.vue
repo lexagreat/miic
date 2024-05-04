@@ -34,8 +34,6 @@
    </section>
 </template>
 <script setup>
-import caseCard from "@/components/case-card.vue";
-
 const filter = defineModel({ default: "value0" });
 const filters = [
    {

@@ -1,8 +1,5 @@
 <template lang="">
-   <appHeader />
-   <slot />
-   <appFooter />
+   <div></div>
 </template>
 <script setup></script>
-
 <style lang=""></style>
