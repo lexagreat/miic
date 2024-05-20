@@ -1,4 +1,4 @@
-<template lang="">
+<template>
    <section class="section cases-section">
       <div class="container">
          <div class="section__wrapper cases-section__wrapper">

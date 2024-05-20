@@ -10,6 +10,26 @@
       height: 38px;
       font-size: 14px;
       white-space: nowrap;
+      &.active {
+         background-color: $yellow;
+         border: 0;
+      }
+   }
+   &.sticky {
+      position: fixed;
+      top: 108px;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      & + .home-experience {
+         padding-top: 62px;
+         @media (max-width: 992px) {
+            padding-top: 53px;
+         }
+      }
+      @media (max-width: 992px) {
+         top: 64px;
+      }
    }
    @media (max-width: 992px) {
       &__list {

@@ -1,29 +1,26 @@
-<template lang="">
+<template>
    <main class="main">
       <ui-app-breadcrumbs :path="[{}]" />
-      <sections-home-hero-section />
+      <sections-home-hero />
       <sections-nav-section />
-      <sections-home-experience-section />
-      <sections-team-section />
-      <sections-cases-section />
-      <sections-partnersSection />
+      <sections-home-experience
+         class="scroll-section"
+         data-scroll="experience"
+      />
+      <sections-services-section
+         class="scroll-section"
+         data-scroll="services"
+      />
+      <sections-team-section class="scroll-section" data-scroll="team" />
+      <sections-cases-section class="scroll-section" data-scroll="cases" />
+      <sections-partners-section
+         class="scroll-section"
+         data-scroll="partners"
+      />
       <sections-sale-banner />
       <sections-faq-section />
-      <sections-remind-questions-section />
       <sections-callback-section />
    </main>
 </template>
-<script setup>
-// import appBreadcrumbs from "@/components/ui/appBreadcrumbs.vue";
-// import homeHeroSection from "~/components/sections/home-hero-section.vue";
-// import navSection from "~/components/sections/nav-section.vue";
-// import homeExperienceSection from "@/components/sections/homeExperienceSection.vue";
-// import casesSection from "~/components/sections/cases-section.vue";
-// import saleBanner from "~/components/sections/sale-banner.vue";
-// import faqSection from "~/components/sections/faq-section.vue";
-// import teamSection from "~/components/sections/team-section.vue";
-// import remindQuestionsSection from "~/components/sections/remind-questions-section.vue";
-// import partnersSection from "~/components/sections/partners-section.vue";
-// import callbackSection from "~/components/sections/callback-section.vue";
-</script>
+<script setup></script>
 <style lang=""></style>
