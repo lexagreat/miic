@@ -13,6 +13,7 @@
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+   color: $black;
 }
 .main {
    flex: 1;
@@ -24,9 +25,8 @@
 .h1 {
    font-size: 48px;
    font-weight: 700;
-   line-height: calc(43 / 48);
+   line-height: calc(57 / 48);
    letter-spacing: -0.03em;
-   color: $black;
    @media (max-width: 992px) {
       font-size: 24px;
    }
@@ -36,12 +36,21 @@
    font-weight: 600;
    line-height: calc(32 / 26);
    letter-spacing: -0.03em;
-   color: $black;
    @media (max-width: 992px) {
       font-size: 24px;
    }
 }
-
+.main-text {
+   font-family: $golosFont;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: calc(36 / 24);
+   letter-spacing: -0.02em;
+   text-align: left;
+   @media (max-width: 992px) {
+      font-size: 12px;
+   }
+}
 .btn {
    cursor: pointer;
    display: flex;
@@ -107,4 +116,35 @@
 }
 .collapse:not(.collapse_show) {
    display: none;
+}
+
+.text-input {
+   position: relative;
+   font-family: $golosFont;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: calc(24 / 14);
+   &.filled {
+      label {
+         font-size: 10px;
+         top: 25%;
+      }
+   }
+   input {
+      background-color: $white;
+      height: 55px;
+      width: 100%;
+      border-radius: 12px;
+      padding-left: 15px;
+      color: $black;
+      font-size: 16px;
+   }
+   label {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      translate: 0 -50%;
+      transition: 0.3s;
+      color: #7a7a7a;
+   }
 }

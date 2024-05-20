@@ -1,0 +1,118 @@
+.brief-section {
+   &__wrapper {
+      background-color: $grey;
+      color: $white;
+      border-radius: 24px;
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      gap: 66px;
+   }
+
+   &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+   }
+
+   &__title {
+      font-size: 34px;
+      font-weight: 600;
+      line-height: calc(41 / 34);
+      letter-spacing: -0.03em;
+   }
+
+   &__text {
+      font-family: $golosFont;
+      font-size: 20px;
+      line-height: calc(30 / 20);
+      letter-spacing: -0.02em;
+   }
+
+   &__content {
+      display: flex;
+      gap: 110px;
+      max-width: 750px;
+      margin: 0 auto;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   &__send {
+   }
+
+   &__remind {
+      font-family: $golosFont;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: calc(14 / 12);
+      text-align: center;
+      color: #ffffff99;
+      a {
+         color: #ffffff99;
+         border-bottom: 1px solid #ffffff99;
+         transition: 0.3s;
+         @media (hover: hover) {
+            &:hover {
+               border-bottom: 1px solid transparent;
+            }
+         }
+         &:active {
+            border-bottom: 1px solid transparent;
+         }
+      }
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   &__subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      text-align: left;
+   }
+
+   &__contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+      ul {
+         display: flex;
+         flex-direction: column;
+         gap: 14px;
+      }
+      a {
+         font-family: $golosFont;
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 26px;
+         letter-spacing: -0.02em;
+         text-align: left;
+         transition: 0.3s;
+         color: $white;
+         @media (hover: hover) {
+            &:hover {
+               color: #858799;
+            }
+         }
+         &:active {
+            color: #858799;
+         }
+      }
+   }
+}

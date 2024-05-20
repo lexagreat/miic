@@ -1,7 +1,7 @@
 .sale-section {
    &__wrapper {
       background: url(@/assets/img/sale-banner.png) right / auto no-repeat,
-         #353535;
+         $grey;
       display: flex;
       flex-direction: column;
       gap: 54px;
@@ -30,7 +30,7 @@
       &__wrapper {
          background: url(@/assets/img/sale-banner-mobile.png) top / 100%
                no-repeat,
-            #353535;
+            $grey;
          padding: 14px;
          padding-top: 124px;
          gap: 24px;

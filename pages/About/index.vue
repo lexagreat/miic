@@ -2,7 +2,7 @@
    <main class="main">
       <ui-app-breadcrumbs :path="path" />
       <sections-about-hero />
-      <sections-home-experience />
+      <sections-experience-section />
       <sections-about-concepts />
       <sections-brief-section />
       <sections-team-section />

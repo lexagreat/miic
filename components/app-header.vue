@@ -88,7 +88,7 @@
                      >
                   </li>
                   <li>
-                     <nuxt-link to="/" class="header__link"
+                     <nuxt-link to="/about" class="header__link"
                         ><span>О нас</span></nuxt-link
                      >
                   </li>

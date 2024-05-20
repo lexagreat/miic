@@ -3,7 +3,7 @@
       <ui-app-breadcrumbs :path="[{}]" />
       <sections-home-hero />
       <sections-nav-section />
-      <sections-home-experience
+      <sections-experience-section
          class="scroll-section"
          data-scroll="experience"
       />
